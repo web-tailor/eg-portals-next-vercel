@@ -8,13 +8,15 @@ export default async function Page() {
         <div>
             <Header />
 
-            <Hero title='Hello'/>
+            <main>
+                <Hero title='Hello'/>
 
-            <section>
-                <div className="container">
+                <section>
+                    <div className="container">
 
-                </div>
-            </section>
+                    </div>
+                </section>
+            </main>
 
 
             <Footer/>

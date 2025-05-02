@@ -3,7 +3,7 @@ import IconChevronRight from "@/components/atoms/icons/IconChevronRight";
 
 export default function Header() {
     return (
-        <header id="header">
+        <header id="header" className="absolute w-full">
             <div className="container flex items-center justify-between">
                 <div className="bg-neutral-100 w-full flex justify-between items-center px-lg py-md rounded-full border-[1px] border-solid border-neutral-200">
                     <a href="/">
