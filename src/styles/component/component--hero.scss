@@ -1,0 +1,14 @@
+@use '../base/base--variables' as *;
+
+.hero {
+  padding: 60px 0 12px;
+  @include no-md {
+    padding: 0 0 12px;
+    h2 {
+      font-size: 22px;
+    }
+    h1 {
+      font-size: 44px;
+    }
+  }
+}

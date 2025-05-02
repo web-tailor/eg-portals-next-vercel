@@ -1,0 +1,97 @@
+$font: 'Avenir', sans-serif;
+$font-h: 'Francy', sans-serif;
+$font-size: 18px;
+$line-height: 1.77;
+$border-radius: 40px;
+$box-shadow: 0px -6px 12px 3px rgba(58, 3, 3, 0.15);
+
+// Primary Colors
+$primary-100: #E7EAFE;
+$primary-300: #A3AEFB;
+$primary-400: #465DF7;
+$primary-500: #304AF6;
+$primary-600: #1835F5;
+
+// Secondary
+$secondary-600: #DFECEB;
+
+// Tertiary
+$tertiary-400: #CDC5F2;
+$tertiary-600: #C2B7EF;
+
+// Neutral
+$neutral-100: #ffffff;
+$neutral-500: #78807F;
+$neutral-600: #484D4C;
+$neutral-700: #303333;
+$neutral-800: #1D1D1D;
+$neutral-900: #000000;
+
+$transition: all 0.2s ease;
+
+$padding: 12px;
+$padding-small: 32px;
+$row-margin: -12px;
+
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+$screen-xxl-min: 1400px;
+
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+@mixin no-sm {
+  @media (max-width: #{$screen-sm-min - 0.02px}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+@mixin no-md {
+  @media (max-width: #{$screen-md-min - 0.02px}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+@mixin no-lg {
+  @media (max-width: #{$screen-lg-min - 0.02px}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+@mixin no-xl {
+  @media (max-width: #{$screen-xl-min - 0.02px}) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media (min-width: #{$screen-xxl-min}) {
+    @content;
+  }
+}
+@mixin no-xxl {
+  @media (max-width: #{$screen-xxl-min - 0.02px}) {
+    @content;
+  }
+}
